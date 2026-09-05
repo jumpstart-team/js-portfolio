@@ -7,23 +7,22 @@
 <meta name="description" content="Brand kit for Crafted Care Pediatrics: identity, palette, typography, voice, and logo system.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* Palette. Every text pairing below is verified to WCAG AA (4.5:1) against
-     the surface it sits on. Sage and Coral are fill-only and never carry text. */
+  /* The eight approved Crafted Care colors. Every text pairing below is
+     verified to WCAG AA (4.5:1) against the surface it sits on. Sage and
+     Coral are fill-only, because neither clears 2.5:1 on any ground here. */
   :root{
-    --paper:#F7F3EA;      /* page ground, warm book stock */
-    --card:#EFE9DC;       /* raised surface */
-    --mist:#DDE3D6;       /* sage tint panel */
-    --blush:#F6D3C6;      /* coral tint panel */
-    --sage-deep:#3A4A3C;  /* primary. 8.52:1 on paper */
-    --moss:#546856;       /* secondary text. 5.43:1 on paper, 4.97:1 on card */
-    --sage:#86A088;       /* fill only */
-    --coral:#E1725A;      /* fill only */
-    --coral-deep:#AA4630; /* accent text. 5.23:1 on paper, 4.78:1 on card */
-    --ink:#2C2E29;        /* body text. 12.39:1 on paper */
-    --line:rgba(58,74,60,.18);
-    --line-soft:rgba(58,74,60,.10);
+    --paper:#FDFBF7;      /* page ground */
+    --cream:#F2EBDD;      /* raised surface */
+    --mist:#E6EBDF;       /* quiet tint panel */
+    --sage:#9CAF88;       /* fill only, 2.28:1 on paper */
+    --coral:#F0876C;      /* fill only, 2.42:1 on paper */
+    --deep-sage:#506244;  /* primary. 6.41 paper / 5.58 cream / 5.46 mist */
+    --deep-coral:#A8452F; /* accent text. 5.71 paper / 4.98 cream / 4.87 mist */
+    --ink:#2B2F26;        /* body copy. 13.22:1 on paper */
+    --line:rgba(80,98,68,.22);
+    --line-soft:rgba(80,98,68,.12);
     /* Type scale. 15 / 17 / 20 / 24 / 32 / 44 / 68. Nothing off this scale. */
     /* Spacing base unit: 8px. All padding, margin and gap are multiples of 8. */
   }
@@ -37,101 +36,101 @@
   .wrap{max-width:1080px;margin:0 auto;padding:0 40px;}
   section{padding:80px 0;border-bottom:1px solid var(--line-soft);}
   h2.section{
-    font-family:'EB Garamond',Georgia,serif;font-weight:500;
-    font-size:clamp(32px,4.4vw,44px);line-height:1.1;
-    color:var(--sage-deep);letter-spacing:-.01em;margin-bottom:24px;
+    font-family:'Literata',Georgia,serif;font-weight:500;
+    font-size:clamp(32px,4.4vw,44px);line-height:1.12;
+    color:var(--deep-sage);letter-spacing:-.01em;margin-bottom:24px;
   }
-  h3{font-family:'EB Garamond',Georgia,serif;font-weight:600;font-size:24px;line-height:1.25;color:var(--sage-deep);}
-  h4{font-family:'Figtree',sans-serif;font-weight:600;font-size:17px;color:var(--sage-deep);}
-  p.lead{font-family:'EB Garamond',Georgia,serif;font-size:clamp(20px,2.4vw,24px);line-height:1.45;color:var(--sage-deep);max-width:760px;}
+  h3{font-family:'Literata',Georgia,serif;font-weight:600;font-size:24px;line-height:1.3;color:var(--deep-sage);}
+  h4{font-family:'Figtree',sans-serif;font-weight:600;font-size:17px;color:var(--deep-sage);}
+  p.lead{font-family:'Literata',Georgia,serif;font-size:clamp(20px,2.4vw,24px);line-height:1.5;color:var(--deep-sage);max-width:760px;}
   p.body{font-size:17px;color:var(--ink);max-width:720px;margin-top:16px;}
-  a{color:var(--coral-deep);}
+  a{color:var(--deep-coral);}
   /* Caps labels carry tracking because tightly set caps are hard to parse.
      Tracking is never applied to running text. */
-  .label{font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);}
+  .label{font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--deep-sage);}
 
-  nav{position:sticky;top:0;z-index:40;background:rgba(247,243,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);}
+  nav{position:sticky;top:0;z-index:40;background:rgba(253,251,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);}
   nav .inner{max-width:1080px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
-  nav .brand{font-family:'EB Garamond',Georgia,serif;font-size:20px;font-weight:600;color:var(--sage-deep);}
+  nav .brand{font-family:'Literata',Georgia,serif;font-size:20px;font-weight:600;color:var(--deep-sage);}
   nav .links{display:flex;gap:24px;flex-wrap:wrap;}
-  nav a{font-size:15px;font-weight:500;color:var(--moss);text-decoration:none;transition:color .2s;}
-  nav a:hover,nav a:focus-visible{color:var(--coral-deep);}
+  nav a{font-size:15px;font-weight:500;color:var(--deep-sage);text-decoration:none;transition:color .2s;}
+  nav a:hover,nav a:focus-visible{color:var(--deep-coral);}
 
   .cover{padding:88px 0 72px;text-align:center;border-bottom:1px solid var(--line-soft);}
-  .cover .markwrap{width:clamp(140px,18vw,184px);margin:0 auto 32px;color:var(--sage-deep);}
+  .cover .markwrap{width:clamp(140px,18vw,184px);margin:0 auto 32px;color:var(--deep-sage);}
   .cover h1{
-    font-family:'EB Garamond',Georgia,serif;font-weight:500;
-    font-size:clamp(44px,7.2vw,68px);line-height:1.02;
-    color:var(--sage-deep);letter-spacing:-.015em;margin-bottom:24px;
+    font-family:'Literata',Georgia,serif;font-weight:500;
+    font-size:clamp(44px,7.2vw,68px);line-height:1.06;
+    color:var(--deep-sage);letter-spacing:-.015em;margin-bottom:24px;
   }
-  .cover .tag{font-family:'EB Garamond',Georgia,serif;font-size:clamp(20px,2.6vw,24px);line-height:1.4;color:var(--coral-deep);max-width:520px;margin:0 auto 24px;}
-  .cover .meta{font-size:15px;color:var(--moss);}
+  .cover .tag{font-family:'Literata',Georgia,serif;font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--deep-coral);max-width:540px;margin:0 auto 24px;}
+  .cover .meta{font-size:15px;color:var(--deep-sage);}
 
   svg.lg{width:100%;height:auto;display:block;fill:currentColor;}
 
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
-  .pillar{background:var(--card);border:1px solid var(--line-soft);border-radius:8px;padding:24px;}
+  .pillar{background:var(--cream);border:1px solid var(--line-soft);border-radius:8px;padding:24px;}
   .pillar h4{margin-bottom:8px;}
   .pillar p{font-size:16px;color:var(--ink);}
 
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px;}
   .taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
-  .taglist span{font-size:16px;padding:8px 16px;border:1px solid var(--line);border-radius:40px;color:var(--sage-deep);background:var(--card);}
-  .avoid span{color:var(--coral-deep);border-color:rgba(170,70,48,.32);background:var(--blush);}
+  .taglist span{font-size:16px;padding:8px 16px;border:1px solid var(--line);border-radius:40px;color:var(--deep-sage);background:var(--cream);}
+  .avoid span{color:var(--deep-coral);border-color:rgba(168,69,47,.34);background:var(--mist);}
 
-  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;}
-  .sw{border:1px solid var(--line-soft);border-radius:8px;overflow:hidden;background:var(--card);}
-  .sw .chip{height:112px;border-bottom:1px solid var(--line-soft);}
+  .swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px;}
+  .sw{border:1px solid var(--line-soft);border-radius:8px;overflow:hidden;background:var(--cream);}
+  .sw .chip{height:104px;border-bottom:1px solid var(--line-soft);}
   .sw .meta{padding:16px;}
-  .sw b{font-family:'EB Garamond',Georgia,serif;font-size:20px;font-weight:600;color:var(--sage-deep);display:block;}
-  .sw .role{font-size:15px;color:var(--moss);margin:4px 0 8px;}
-  .sw code{font-family:'Figtree',sans-serif;font-size:15px;font-weight:500;color:var(--ink);letter-spacing:.04em;}
-  .c-paper{background:var(--paper);} .c-card{background:var(--card);} .c-mist{background:var(--mist);}
-  .c-blush{background:var(--blush);} .c-sagedeep{background:var(--sage-deep);} .c-moss{background:var(--moss);}
-  .c-sage{background:var(--sage);} .c-coral{background:var(--coral);} .c-coraldeep{background:var(--coral-deep);}
+  .sw b{font-family:'Literata',Georgia,serif;font-size:19px;font-weight:600;color:var(--deep-sage);display:block;}
+  .sw .role{font-size:15px;color:var(--deep-sage);margin:4px 0 8px;}
+  .sw code{font-family:'Figtree',sans-serif;font-size:15px;font-weight:600;color:var(--ink);letter-spacing:.04em;}
+  .c-paper{background:var(--paper);} .c-cream{background:var(--cream);} .c-mist{background:var(--mist);}
+  .c-sage{background:var(--sage);} .c-coral{background:var(--coral);}
+  .c-deepsage{background:var(--deep-sage);} .c-deepcoral{background:var(--deep-coral);}
   .c-ink{background:var(--ink);}
 
   .ratio{display:flex;height:48px;border-radius:8px;overflow:hidden;margin-top:32px;border:1px solid var(--line-soft);}
-  .ratio div{display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:500;}
-  .note{font-size:16px;color:var(--moss);margin-top:16px;max-width:720px;}
+  .ratio div{display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;}
+  .note{font-size:16px;color:var(--deep-sage);margin-top:16px;max-width:760px;}
 
-  .specimen{border:1px solid var(--line-soft);border-radius:8px;padding:32px;margin-top:16px;background:var(--card);}
-  .specimen .fname{font-family:'EB Garamond',Georgia,serif;font-size:24px;font-weight:600;color:var(--sage-deep);}
-  .specimen .use{font-size:16px;color:var(--moss);margin:8px 0 24px;}
-  .specimen .big{line-height:1;color:var(--sage-deep);margin-bottom:16px;overflow-wrap:break-word;}
-  .sp-garamond .big{font-family:'EB Garamond',Georgia,serif;font-weight:500;font-size:56px;}
+  .specimen{border:1px solid var(--line-soft);border-radius:8px;padding:32px;margin-top:16px;background:var(--cream);}
+  .specimen .fname{font-family:'Literata',Georgia,serif;font-size:24px;font-weight:600;color:var(--deep-sage);}
+  .specimen .use{font-size:16px;color:var(--deep-sage);margin:8px 0 24px;}
+  .specimen .big{line-height:1.05;color:var(--deep-sage);margin-bottom:16px;overflow-wrap:break-word;}
+  .sp-literata .big{font-family:'Literata',Georgia,serif;font-weight:500;font-size:48px;}
   .sp-figtree .big{font-family:'Figtree',sans-serif;font-weight:600;font-size:44px;letter-spacing:-.02em;}
   .specimen .set{font-size:17px;color:var(--ink);max-width:640px;}
 
   .scale{width:100%;border-collapse:collapse;margin-top:32px;font-size:16px;}
   .scale th,.scale td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line-soft);}
-  .scale th{font-weight:600;color:var(--sage-deep);font-size:15px;letter-spacing:.08em;text-transform:uppercase;}
-  .scale td:first-child{font-family:'EB Garamond',Georgia,serif;font-size:20px;color:var(--sage-deep);}
-  .scale code{font-family:'Figtree',sans-serif;font-weight:500;color:var(--moss);}
+  .scale th{font-weight:600;color:var(--deep-sage);font-size:15px;letter-spacing:.08em;text-transform:uppercase;}
+  .scale td:first-child{font-family:'Literata',Georgia,serif;font-size:19px;color:var(--deep-sage);}
+  .scale code{font-family:'Figtree',sans-serif;font-weight:600;color:var(--ink);}
 
   .samples{margin-top:32px;display:grid;gap:16px;}
-  .sample{background:var(--card);border:1px solid var(--line-soft);border-radius:8px;padding:24px;}
-  .sample .s{font-family:'EB Garamond',Georgia,serif;font-size:24px;line-height:1.35;color:var(--sage-deep);}
-  .sample .why{font-size:16px;color:var(--moss);margin-top:8px;}
+  .sample{background:var(--cream);border:1px solid var(--line-soft);border-radius:8px;padding:24px;}
+  .sample .s{font-family:'Literata',Georgia,serif;font-size:23px;line-height:1.4;color:var(--deep-sage);}
+  .sample .why{font-size:16px;color:var(--deep-sage);margin-top:8px;}
 
   .rules{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px;}
   .rule{border:1px solid var(--line);border-radius:8px;padding:24px;background:var(--paper);}
   .rule h4{margin-bottom:8px;}
   .rule p{font-size:16px;color:var(--ink);}
-  .rule.stop{background:var(--blush);border-color:rgba(170,70,48,.28);}
-  .rule.stop h4{color:var(--coral-deep);}
+  .rule.stop{background:var(--mist);border-color:rgba(168,69,47,.3);}
+  .rule.stop h4{color:var(--deep-coral);}
 
   .locks{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px;}
   .panel{border:1px solid var(--line-soft);border-radius:8px;padding:40px;display:flex;align-items:center;justify-content:center;min-height:240px;}
   .panel svg{max-width:220px;}
-  .p-paper{background:var(--paper);color:var(--sage-deep);}
-  .p-card{background:var(--card);color:var(--sage-deep);}
-  .p-deep{background:var(--sage-deep);color:var(--paper);}
-  .p-coral{background:var(--coral);color:var(--sage-deep);}
-  .p-mist{background:var(--mist);color:var(--sage-deep);}
-  .cap{font-size:15px;color:var(--moss);margin-top:8px;}
+  .p-paper{background:var(--paper);color:var(--deep-sage);}
+  .p-cream{background:var(--cream);color:var(--deep-sage);}
+  .p-deep{background:var(--deep-sage);color:var(--paper);}
+  .p-coral{background:var(--coral);color:var(--ink);}
+  .p-mist{background:var(--mist);color:var(--deep-sage);}
+  .cap{font-size:15px;color:var(--deep-sage);margin-top:8px;}
   .favrow{display:flex;align-items:flex-end;gap:32px;margin-top:32px;flex-wrap:wrap;}
-  .fav{background:var(--sage-deep);color:var(--paper);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+  .fav{background:var(--deep-sage);color:var(--paper);border-radius:8px;display:flex;align-items:center;justify-content:center;}
   .fav svg{width:72%;}
   .f64{width:64px;height:64px;} .f32{width:32px;height:32px;} .f24{width:24px;height:24px;}
 
@@ -140,16 +139,17 @@
   footer h3{margin-bottom:16px;}
   footer ul{margin:16px 0 0 24px;}
   footer li{font-size:16px;color:var(--ink);margin-bottom:8px;}
-  footer .sign{font-size:16px;color:var(--moss);margin-top:32px;}
+  footer .sign{font-size:16px;color:var(--deep-sage);margin-top:32px;}
 
   @media (max-width:860px){
     body{font-size:16px;}
     .wrap{padding:0 24px;} nav .inner{padding:16px 24px;} nav .links{display:none;}
     section{padding:56px 0;}
-    .pillars,.two-col,.swatches,.rules,.locks{grid-template-columns:1fr;gap:16px;}
+    .pillars,.two-col,.rules,.locks{grid-template-columns:1fr;gap:16px;}
+    .swatches{grid-template-columns:repeat(2,1fr);}
     .two-col{gap:32px;}
     p.body,.pillar p,.rule p,.note,.sample .why,.specimen .set,footer li{font-size:16px;}
-    .sp-garamond .big{font-size:40px;} .sp-figtree .big{font-size:32px;}
+    .sp-literata .big{font-size:34px;} .sp-figtree .big{font-size:32px;}
     .specimen{padding:24px;} .panel{padding:24px;min-height:180px;}
     .scale{font-size:16px;} .scale th,.scale td{padding:8px;}
   }
@@ -182,12 +182,12 @@
 <section id="identity"><div class="wrap">
   <h2 class="section">Handmade medicine for growing families.</h2>
   <p class="lead">Krystyna Wesp, DO crochets hats for her newborn patients and hands out books in clinic. That is the practice. The identity only has to be honest about it.</p>
-  <p class="body">Most pediatric branding reaches for the same shelf: primary colors, cartoon animals, balloons, a crayon wordmark. It reads as a waiting room, and it tells a parent nothing about the doctor. Crafted Care goes the other direction. The palette is sage and coral on book paper. The mark is a parent holding a child, drawn in one continuous line, resting on an open book. The texture in this brand is real, because the handmade part of the practice is real and a competitor cannot copy it without looking like a copy.</p>
+  <p class="body">Most pediatric branding reaches for the same shelf: primary colors, cartoon animals, balloons, a crayon wordmark. It reads as a waiting room, and it tells a parent nothing about the doctor. Crafted Care goes the other direction. The palette is sage and coral on a warm off-white. The mark is a parent holding a child, drawn in one continuous line, resting on an open book. The handmade part of this brand is real, so it leads the visual system instead of decorating it.</p>
   <p class="body">The audience is the parent, not the child. Usually a tired mother or father who has spent seven minutes with a pediatrician who was already late. Every choice below is aimed at that person.</p>
   <div class="pillars">
     <div class="pillar">
       <h4>Handmade</h4>
-      <p>Books, yarn, hats for newborns. The craft is the differentiator, so it leads the visual system instead of decorating it.</p>
+      <p>Books, yarn, hats for newborns. The craft is the differentiator, and it carries through to the stitch patterns used as edges and borders.</p>
     </div>
     <div class="pillar">
       <h4>Unhurried</h4>
@@ -207,69 +207,69 @@
     <div>
       <span class="label">Reads as</span>
       <div class="taglist">
-        <span>Warm</span><span>Unhurried</span><span>Reassuring</span>
-        <span>Specific</span><span>Confident</span><span>Plainspoken</span>
+        <span>Calm</span><span>Specific</span><span>Warm</span>
+        <span>Unhurried</span><span>Confident</span><span>Plainspoken</span>
         <span>Handmade</span><span>Grounded</span>
       </div>
     </div>
     <div>
       <span class="label">Never reads as</span>
       <div class="taglist avoid">
-        <span>Cartoonish</span><span>Clinical</span><span>Breathless</span>
-        <span>Cutesy</span><span>Hedging</span><span>Corporate</span>
-        <span>Primary colors</span><span>Balloons</span>
+        <span>Baby talk</span><span>Cartoon animals</span><span>Balloons</span>
+        <span>Crayon lettering</span><span>Stock photography</span><span>Pressure</span>
+        <span>Clinical</span><span>Corporate</span>
       </div>
     </div>
   </div>
 </div></section>
 
 <section id="color"><div class="wrap">
-  <h2 class="section">Sage and coral on book paper.</h2>
-  <p class="lead">Sage and coral came from the client. Paper, moss, and the two tints exist so the pair has somewhere to live at full page scale.</p>
+  <h2 class="section">Sage and coral on a warm off-white.</h2>
+  <p class="lead">Sage and coral are the two colors Dr. Wesp asked for, set on a warm off-white rather than a stark one. The deeper version of each carries the words, so everything stays readable on a phone in a waiting room.</p>
   <div class="swatches">
-    <div class="sw"><div class="chip c-sagedeep"></div><div class="meta"><b>Sage Deep</b><p class="role">Primary. Headings, logo ink, reversed panels.</p><code>#3A4A3C</code></div></div>
-    <div class="sw"><div class="chip c-coral"></div><div class="meta"><b>Coral</b><p class="role">Brand accent. Fills and panels only.</p><code>#E1725A</code></div></div>
-    <div class="sw"><div class="chip c-paper"></div><div class="meta"><b>Paper</b><p class="role">Page ground. Warm, close to book stock.</p><code>#F7F3EA</code></div></div>
-    <div class="sw"><div class="chip c-moss"></div><div class="meta"><b>Moss</b><p class="role">Secondary text. Captions, metadata, nav.</p><code>#546856</code></div></div>
-    <div class="sw"><div class="chip c-coraldeep"></div><div class="meta"><b>Coral Deep</b><p class="role">Accent text. Links, the tagline, small emphasis.</p><code>#AA4630</code></div></div>
-    <div class="sw"><div class="chip c-sage"></div><div class="meta"><b>Sage</b><p class="role">Fill only. Rules, illustration, flat shapes.</p><code>#86A088</code></div></div>
-    <div class="sw"><div class="chip c-mist"></div><div class="meta"><b>Sage Mist</b><p class="role">Tint panel. Quiet section breaks.</p><code>#DDE3D6</code></div></div>
-    <div class="sw"><div class="chip c-blush"></div><div class="meta"><b>Coral Blush</b><p class="role">Tint panel. Callouts and warnings.</p><code>#F6D3C6</code></div></div>
-    <div class="sw"><div class="chip c-ink"></div><div class="meta"><b>Ink</b><p class="role">Body copy. A green-black, never pure black.</p><code>#2C2E29</code></div></div>
+    <div class="sw"><div class="chip c-sage"></div><div class="meta"><b>Sage</b><p class="role">Fill only. Flat shapes, rules, illustration.</p><code>#9CAF88</code></div></div>
+    <div class="sw"><div class="chip c-coral"></div><div class="meta"><b>Coral</b><p class="role">Fill only. Kept rare on purpose.</p><code>#F0876C</code></div></div>
+    <div class="sw"><div class="chip c-deepsage"></div><div class="meta"><b>Deep Sage</b><p class="role">Primary. Headings, logo ink, reversed panels.</p><code>#506244</code></div></div>
+    <div class="sw"><div class="chip c-deepcoral"></div><div class="meta"><b>Deep Coral</b><p class="role">Accent text. Links, the tagline, emphasis.</p><code>#A8452F</code></div></div>
+    <div class="sw"><div class="chip c-cream"></div><div class="meta"><b>Cream</b><p class="role">Quiet background. Cards and raised surfaces.</p><code>#F2EBDD</code></div></div>
+    <div class="sw"><div class="chip c-mist"></div><div class="meta"><b>Sage Mist</b><p class="role">Quiet background. Section breaks, callouts.</p><code>#E6EBDF</code></div></div>
+    <div class="sw"><div class="chip c-paper"></div><div class="meta"><b>Paper</b><p class="role">Page ground. Warm rather than stark.</p><code>#FDFBF7</code></div></div>
+    <div class="sw"><div class="chip c-ink"></div><div class="meta"><b>Ink</b><p class="role">Body copy. A green-black, never pure black.</p><code>#2B2F26</code></div></div>
   </div>
   <div class="ratio">
-    <div class="c-paper" style="flex:56;color:#546856">Paper</div>
-    <div class="c-sagedeep" style="flex:22;color:#F7F3EA">Sage Deep</div>
-    <div class="c-mist" style="flex:12;color:#3A4A3C">Mist</div>
-    <div class="c-sage" style="flex:6"></div>
-    <div class="c-coral" style="flex:4"></div>
+    <div class="c-paper" style="flex:54;color:#506244">Paper</div>
+    <div class="c-deepsage" style="flex:22;color:#FDFBF7">Deep Sage</div>
+    <div class="c-cream" style="flex:10;color:#506244">Cream</div>
+    <div class="c-mist" style="flex:8;color:#506244">Mist</div>
+    <div class="c-sage" style="flex:4"></div>
+    <div class="c-coral" style="flex:3"></div>
   </div>
-  <p class="note">Working balance across a page. Paper carries the space, Sage Deep leads, and coral stays scarce enough that it still registers when it appears.</p>
-  <p class="note"><b>Text rules.</b> Sage and Coral are fill colors and never carry text. For type on paper use Sage Deep at 8.52:1, Ink at 12.39:1, Moss at 5.43:1, or Coral Deep at 5.23:1. Reversed, use Paper on Sage Deep at 8.52:1. Every combination in this kit clears WCAG AA for body text.</p>
+  <p class="note">Sage and coral do the color. Cream and sage mist do the quiet backgrounds. Coral stays rare on purpose, so that when it shows up it means something.</p>
+  <p class="note"><b>Text rules.</b> Sage and Coral are fill colors and never carry text, because neither reaches 2.5:1 on any ground in this system. For type on paper use Deep Sage at 6.41:1, Ink at 13.22:1, or Deep Coral at 5.71:1. Reversed, use Paper on Deep Sage at 6.41:1 or Paper on Deep Coral at 5.71:1. On a coral fill, use Ink at 5.46:1. Every pairing in this kit clears WCAG AA for body text.</p>
 </div></section>
 
 <section id="type"><div class="wrap">
-  <h2 class="section">Old-style serif with a humanist sans.</h2>
-  <p class="lead">Two families, no exceptions. The serif answers to the logo wordmark, and the sans keeps long-form patient copy easy to read on a phone at 2am.</p>
-  <div class="specimen sp-garamond">
-    <p class="big">Unhurried care</p>
-    <p class="fname">EB Garamond</p>
+  <h2 class="section">Two typefaces, one with a voice.</h2>
+  <p class="lead">One typeface has a voice and one stays out of the way. The Crafted Care wordmark follows the regular Literata serif direction, with no cursive or script treatment anywhere in the system.</p>
+  <div class="specimen sp-literata">
+    <p class="big">Crafting a lifetime of health</p>
+    <p class="fname">Literata</p>
     <p class="use">Display. Headlines, section titles, pull quotes, the tagline. Weights 400, 500, 600.</p>
-    <p class="set">An old-style serif with the same high-contrast, bookish structure as the Crafted Care wordmark. It carries the reading and quilting story without any of it being said out loud, and it sets beautifully at large sizes.</p>
+    <p class="set">Google had this drawn as the reading typeface for Play Books, so it is quite literally a face made for books. It carries headlines, the tagline, and anything meant to sound like Dr. Wesp talking.</p>
   </div>
   <div class="specimen sp-figtree">
-    <p class="big">Same-day and next-day</p>
+    <p class="big">Membership pricing, by age</p>
     <p class="fname">Figtree</p>
-    <p class="use">Body. Running text, navigation, forms, buttons, captions, all caps labels. Weights 400, 500, 600, 700.</p>
-    <p class="set">A humanist sans that is friendly without being childish, which is the narrow target for a pediatric practice trying to avoid the crayon shelf. It holds up in small sizes and long paragraphs.</p>
+    <p class="use">Body. Running text, navigation, forms, pricing, captions, all caps labels. Weights 400, 500, 600, 700.</p>
+    <p class="set">Warm and open without being childish, which rules out the bubbly fonts this category usually reaches for. It handles navigation, forms, pricing, and everything a parent needs to read quickly.</p>
   </div>
   <table class="scale">
     <thead><tr><th>Step</th><th>Size</th><th>Family</th><th>Use</th></tr></thead>
     <tbody>
-      <tr><td>Display</td><td><code>44 to 68px</code></td><td>EB Garamond 500</td><td>Page titles, hero</td></tr>
-      <tr><td>Section</td><td><code>32 to 44px</code></td><td>EB Garamond 500</td><td>Section headings</td></tr>
-      <tr><td>Lead</td><td><code>20 to 24px</code></td><td>EB Garamond 400</td><td>Opening paragraph, pull quotes</td></tr>
-      <tr><td>Subhead</td><td><code>24px</code></td><td>EB Garamond 600</td><td>Card and block titles</td></tr>
+      <tr><td>Display</td><td><code>44 to 68px</code></td><td>Literata 500</td><td>Page titles, hero</td></tr>
+      <tr><td>Section</td><td><code>32 to 44px</code></td><td>Literata 500</td><td>Section headings</td></tr>
+      <tr><td>Lead</td><td><code>20 to 24px</code></td><td>Literata 400</td><td>Opening paragraph, pull quotes</td></tr>
+      <tr><td>Subhead</td><td><code>24px</code></td><td>Literata 600</td><td>Card and block titles</td></tr>
       <tr><td>Body</td><td><code>17px</code></td><td>Figtree 400</td><td>Running text</td></tr>
       <tr><td>Small</td><td><code>16px</code></td><td>Figtree 400</td><td>Captions, secondary notes</td></tr>
       <tr><td>Label</td><td><code>15px</code></td><td>Figtree 600, caps</td><td>Metadata, section labels</td></tr>
@@ -280,7 +280,7 @@
 
 <section id="voice"><div class="wrap">
   <h2 class="section">How Crafted Care talks.</h2>
-  <p class="lead">Write to the parent. Name the feeling of the rushed seven-minute visit, and never name a competitor.</p>
+  <p class="lead">Warmth, comfort, and personal connection, in Dr. Wesp's words. Below is how that turns into rules the writing holds itself to.</p>
   <div class="samples">
     <div class="sample">
       <p class="s">Your pediatrician has time for the question you were going to ask in the parking lot.</p>
@@ -292,52 +292,52 @@
     </div>
     <div class="sample">
       <p class="s">Every newborn goes home with a hat I made. Every visit ends with a book.</p>
-      <p class="why">First person from Dr. Wesp. The craft is the differentiator, so it appears as fact, not as a brand story.</p>
+      <p class="why">First person from Dr. Wesp. A doctor talking to a parent, rather than a brand talking to a market.</p>
     </div>
     <div class="sample">
       <p class="s">We vaccinate on schedule, and we will talk it through as long as you need.</p>
-      <p class="why">A clear position stated once, calmly, without picking a fight.</p>
+      <p class="why">Confident about training and about vaccines, without arguing.</p>
     </div>
   </div>
   <div class="rules">
-    <div class="rule stop">
-      <h4>Never write 24/7</h4>
-      <p>Also never around the clock, always available, or anytime access. Dr. Wesp told us directly that she is a mother and a patient before she is a 24 hour physician. Write direct access, same-day and next-day availability.</p>
+    <div class="rule">
+      <h4>What it sounds like</h4>
+      <p>Calm and specific. Short sentences and real numbers. A doctor talking to a parent. Comfortable naming boundaries, because being reachable is different from being on call around the clock.</p>
     </div>
     <div class="rule stop">
-      <h4>Never soften the vaccine position</h4>
-      <p>She wants families who vaccinate. Do not write we support your choices or anything that reads as neutral. State the practice vaccinates and move on.</p>
+      <h4>What it never does</h4>
+      <p>Baby talk, so no "little ones", no "tiny humans", no "mamas". No cartoon animals, balloons, or crayon lettering. No stock photography, because families here recognize a stock family. No pressure, so nothing like "spots are filling fast" on a waitlist for infants.</p>
+    </div>
+    <div class="rule stop">
+      <h4>Never write 24/7</h4>
+      <p>Also never around the clock, always available, or anytime access. Dr. Wesp is a mother and a patient before she is a 24 hour physician. Write direct access, same-day and next-day availability.</p>
     </div>
     <div class="rule">
       <h4>The call to action changes at launch</h4>
       <p>Until the December opening, every call to action is join the waitlist. On opening day it becomes schedule a meet-and-greet, sitewide and across social.</p>
-    </div>
-    <div class="rule">
-      <h4>Write to the parent</h4>
-      <p>The buyer is an exhausted mother or father. Warmth comes from specifics, so name the hat, the book, the home visit. Skip the language about caring deeply.</p>
     </div>
   </div>
 </div></section>
 
 <section id="logos"><div class="wrap">
   <h2 class="section">The mark.</h2>
-  <p class="lead">A parent and child drawn as one continuous line, resting on an open book. The book is the ground the figures sit on, which is the whole idea of the practice in one shape.</p>
+  <p class="lead">A parent and child drawn as one continuous line, resting on an open book. Use the primary lockup whenever space allows, and keep the standalone mark for compact applications.</p>
   <div class="locks">
     <div>
       <div class="panel p-paper"><svg class="lg" viewBox="0 0 1164 1194" role="img"><title>Crafted Care Pediatrics logo</title><use href="#cc-logo"/></svg></div>
-      <p class="cap">Primary lockup. Sage Deep on Paper.</p>
+      <p class="cap">Primary lockup. Deep Sage on Paper.</p>
     </div>
     <div>
       <div class="panel p-deep"><svg class="lg" viewBox="0 0 1164 1194" aria-hidden="true"><use href="#cc-logo"/></svg></div>
-      <p class="cap">Reversed. Paper on Sage Deep.</p>
+      <p class="cap">Reversed. Paper on Deep Sage.</p>
     </div>
     <div>
-      <div class="panel p-card"><svg class="lg" viewBox="0 0 1264 1048" aria-hidden="true"><use href="#cc-mark"/></svg></div>
+      <div class="panel p-cream"><svg class="lg" viewBox="0 0 1264 1048" aria-hidden="true"><use href="#cc-mark"/></svg></div>
       <p class="cap">Mark alone. Use where the name is already present.</p>
     </div>
     <div>
       <div class="panel p-coral"><svg class="lg" viewBox="0 0 1264 1048" aria-hidden="true"><use href="#cc-mark"/></svg></div>
-      <p class="cap">Mark on Coral. Sage Deep ink, for social tiles and covers.</p>
+      <p class="cap">Mark on Coral. Ink, for social tiles and covers.</p>
     </div>
     <div>
       <div class="panel p-mist" style="min-height:160px"><svg class="lg" viewBox="0 0 1472 376" aria-hidden="true"><use href="#cc-word"/></svg></div>
@@ -359,17 +359,15 @@
 
 <footer><div class="wrap">
   <div class="status">
-    <h3>Status and open items</h3>
-    <p class="body">The logo and wordmark here are traced from the approved Crafted Care mark in the Canva brand kit. The palette, type pairing, voice rules, and scale in this document are a JumpStart proposal and have not been through a client approval round.</p>
+    <h3>About this page</h3>
+    <p class="body">This is a portfolio view of the Crafted Care Pediatrics brand kit. Krystyna Wesp approved the logo on 26 August 2026, and the full kit was delivered on 27 August with a revised edition on 31 August. The colors, type pairing, and voice rules on this page are the approved ones.</p>
+    <p class="body">The delivered kit runs wider than this page does. It also documents the two crochet stitch patterns used as edges and borders, the card and social applications, and the take-home pieces: a book plate for the inside cover of every book given out, a hat tag carrying the tagline and nothing else, and a membership card for each child.</p>
     <ul>
-      <li>Confirm the sage and coral hex values against Dr. Wesp before any asset ships.</li>
-      <li>Confirm the type pairing. The prior working note said Literata, which does not match the serif in the wordmark.</li>
-      <li>Verify the claim that Crafted Care is the first pediatric direct primary care practice in North Fort Worth before it appears in a headline.</li>
-      <li>Membership pricing and age bands are unknown. No figure appears in this kit.</li>
-      <li>Confirm the exact December opening date so the call to action switch can be scheduled.</li>
-      <li>Draw a simplified favicon. The line weight in the full mark closes up below 24px.</li>
+      <li>Membership pricing and age bands are set by the practice and appear nowhere in this kit.</li>
+      <li>The claim that Crafted Care is the first pediatric direct primary care practice in North Fort Worth needs a market scan before it runs in a headline.</li>
+      <li>A simplified favicon still needs drawing, because the line weight in the full mark closes up below 24px.</li>
     </ul>
-    <p class="sign">Prepared by JumpStart DPC Solutions for Crafted Care Pediatrics. Draft, September 2026.</p>
+    <p class="sign">Prepared by JumpStart DPC Solutions for Crafted Care Pediatrics.</p>
   </div>
 </div></footer>
 
